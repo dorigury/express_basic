@@ -1,0 +1,54 @@
+get http://localhost:8000/
+
+###
+get http://localhost:8000/hello 
+
+### 
+get http://localhost:8000/qs?p1=aa
+
+###
+post http://localhost:8000/post-req
+# json 형식으로 요청
+Content-Type: application/json; charset=UTF-8
+# body에 json 데이터를 넣어서 요청 (한줄을 띄어야 바디로 인식함)
+
+{
+    "name": "홍길동",
+    "age": 20
+}
+
+###
+post http://localhost:8000/save
+Content-Type: application/json; charset=UTF-8
+# body에 json 데이터를 넣어서 요청 (한줄을 띄어야 바디로 인식함)
+
+{
+    "name": "미국",
+    "capital": "워싱턴 DC",
+    "population": 90000000
+}
+
+# localhost:8000/list 에서 확인
+###
+get http://localhost:8000/list
+
+# localhost:8000/1
+###
+get http://localhost:8000/nation/1
+
+# localhost:8000/1
+###
+put http://localhost:8000/nation/1
+Content-Type: application/json; charset=UTF-8
+
+{
+    "id": 1,
+    "name": "한국",
+    "capital": "서울",
+    "population": 53000000
+}
+
+###
+delete http://localhost:8000/nation/4
+
+
