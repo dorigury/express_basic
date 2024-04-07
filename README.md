@@ -6,15 +6,29 @@ npm init -y
 # dependency 설치 
  npm i [dependency 이름]
 - express: 백엔드 프레임워크 
+```
 npm i express
+```
+
 - cors: cors설정
+```
 npm i cors
+```
+
 - json: json 파싱
+```
 npm i json
+```
+
 - body-parser: 요청 body 받기 
+```
 npm i body-parser
+```
+
 - nodeman: index.js 저장시 서버 새로고침, 개발모드에만 설치
+```
 npm i nodemon -D
+```
 
 # api test
 - postman 
@@ -42,5 +56,6 @@ insert into nations_table(name, capital, population) values(?,?,?);
 ```
 
 - mysql 설치
+```
 npm i mysql 
-
+```
